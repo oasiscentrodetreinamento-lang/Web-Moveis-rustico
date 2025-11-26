@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Móveis Rústicos Piranguinho | Raro como o tempo</title>
+    <meta name="description" content="Móveis rústicos feitos com madeira de demolição. Peças exclusivas em Peroba Rosa." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              rust: {
+                50: '#fcf5f5',
+                100: '#f7e8e8',
+                200: '#edd4d4',
+                300: '#dbaaaa',
+                400: '#c57a7a',
+                500: '#a85353',
+                600: '#8c3d3d', // Approx base
+                700: '#5d2d2d', // Brand Primary
+                800: '#551819', // Brand Deep
+                900: '#4e1516', // Brand Darkest
+                950: '#2b0a0b',
+              },
+              beige: {
+                50: '#f7f5f4',
+                100: '#e2d8d6', // Brand Light
+                200: '#d3c2bf',
+                300: '#bc9f9b',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Montserrat', 'serif'],
+            },
+            backgroundImage: {
+              'wood-pattern': "url('https://www.transparenttextures.com/patterns/wood-pattern.png')",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #e2d8d6;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #5d2d2d;
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #4e1516;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6"
+  }
+}
+</script>
+</head>
+  <body class="bg-beige-50 text-rust-900 font-sans antialiased">
+    <div id="root"></div>
+  </body>
+</html>
